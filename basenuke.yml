@@ -1,0 +1,16 @@
+---
+regions:
+- "global" # This is for all global resource types e.g. IAM
+- "eu-west-1"
+- "us-east-1"
+
+account-blacklist:
+- ${masteracct} 
+
+accounts:
+  ${nukeacct}: 
+    filters:
+      IAMRole:
+        - "AWSCloudFormationStackSetExecutionRole"
+      IAMRolePolicy:
+        - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
