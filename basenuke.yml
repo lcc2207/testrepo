@@ -16,9 +16,11 @@ accounts:
         - "nuketest1"
       IAMRolePolicy:
         - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
+        - "CodeBuildBasePolicy-Nuketest-us-east-1"
         - "NukeIT -> AdministratorAccess"
         - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
         - "nuketest1 -> nukeitassume"
       CodeBuildProject:
         - "Nuketest"
+
 
