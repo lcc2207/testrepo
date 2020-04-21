@@ -8,9 +8,17 @@ account-blacklist:
 - masteracct
 
 accounts:
-  nukeacct: 
+  nukeacct:
     filters:
       IAMRole:
         - "AWSCloudFormationStackSetExecutionRole"
+        - "NukeIT"
+        - "nuketest1"
       IAMRolePolicy:
         - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
+        - "NukeIT" -> AdministratorAccess"
+        - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
+        - "nuketest1 -> nukeitassume"
+      CodeBuildProject:
+        - "Nuketest"
+
