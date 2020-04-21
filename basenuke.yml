@@ -5,10 +5,10 @@ regions:
 - "us-east-1"
 
 account-blacklist:
-- ${masteracct} 
+- masteracct
 
 accounts:
-  ${nukeacct}: 
+  nukeacct: 
     filters:
       IAMRole:
         - "AWSCloudFormationStackSetExecutionRole"
