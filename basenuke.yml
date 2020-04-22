@@ -30,3 +30,5 @@ accounts:
         - "NukeRole"
       CloudWatchLogsLogGroup:
         - "/aws/codebuild/Nuketest"
+      IAMPolicy:
+        - "CodeBuildBasePolicy-Nuketest-us-east-1"
