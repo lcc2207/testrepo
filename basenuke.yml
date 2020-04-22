@@ -28,3 +28,5 @@ accounts:
         - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
       CloudFormationStack:
         - "NukeRole"
+      CloudWatchLogsLogGroup:
+        - "/aws/codebuild/Nuketest"
