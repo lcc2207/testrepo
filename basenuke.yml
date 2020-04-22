@@ -20,6 +20,7 @@ accounts:
         - "NukeIT -> AdministratorAccess"
         - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
         - "nuketest1 -> nukeitassume"
+        - "CodeBuildBasePolicy-Nuketest-us-east-1"
       CodeBuildProject:
         - "Nuketest"
       IAMRolePolicyAttachment:
@@ -27,4 +28,3 @@ accounts:
         - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
       CloudFormationStack:
         - "NukeRole"
-
