@@ -26,4 +26,3 @@ accounts:
         - "NukeAcct"
       CloudWatchLogsLogGroup:
         - "AccountNuker-NukeAcct*"
-© 2020 GitHub, Inc.
