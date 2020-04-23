@@ -13,22 +13,17 @@ accounts:
       IAMRole:
         - "AWSCloudFormationStackSetExecutionRole"
         - "NukeIT"
-        - "nuketest1"
       IAMRolePolicy:
         - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
-        - "CodeBuildBasePolicy-Nuketest-us-east-1"
         - "NukeIT -> AdministratorAccess"
-        - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
-        - "nuketest1 -> nukeitassume"
-        - "CodeBuildBasePolicy-Nuketest-us-east-1"
+        - "NukeAcct-*"
       CodeBuildProject:
-        - "Nuketest"
+        - "AccountNuker"
       IAMRolePolicyAttachment:
         - "NukeIT -> AdministratorAccess"
         - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
       CloudFormationStack:
-        - "NukeRole"
+        - "NukeAcct"
       CloudWatchLogsLogGroup:
-        - "/aws/codebuild/Nuketest"
-      IAMPolicy:
-        - "arn:aws:iam::814582623523:policy/service-role/CodeBuildBasePolicy-Nuketest-us-east-1"
+        - "AccountNuker-NukeAcct*"
+© 2020 GitHub, Inc.
