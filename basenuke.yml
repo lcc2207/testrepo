@@ -17,7 +17,7 @@ accounts:
       IAMRolePolicy:
         - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
         - "NukeIT -> AdministratorAccess"
-        - "NukeAcct-CodeBuild"
+        - NukeAcct-CodeBuild -> CodeBuildManage
       CodeBuildProject:
         - "AccountNuker"
       IAMRolePolicyAttachment:
