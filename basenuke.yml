@@ -13,15 +13,17 @@ accounts:
       IAMRole:
         - "AWSCloudFormationStackSetExecutionRole"
         - "NukeIT"
+        - "NukeAcct-CodeBuild"
       IAMRolePolicy:
         - "AWSCloudFormationStackSetExecutionRole -> AdministratorAccess"
         - "NukeIT -> AdministratorAccess"
-        - "NukeAcct-*"
+        - "NukeAcct-CodeBuild"
       CodeBuildProject:
         - "AccountNuker"
       IAMRolePolicyAttachment:
         - "NukeIT -> AdministratorAccess"
+        - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
       CloudFormationStack:
         - "NukeAcct"
       CloudWatchLogsLogGroup:
-        - "AccountNuker-NukeAcct"
+        - "AccountNuker-NukeAcct*"
