@@ -22,7 +22,7 @@ accounts:
         - "AccountNuker"
       IAMRolePolicyAttachment:
         - "NukeIT -> AdministratorAccess"
-        - "nuketest1 -> CodeBuildBasePolicy-Nuketest-us-east-1"
+        - "NukeAcct-CodeBuild -> CodeBuildManage"
       CloudFormationStack:
         - "NukeAcct"
       CloudWatchLogsLogGroup:
