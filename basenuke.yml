@@ -26,4 +26,4 @@ accounts:
       CloudFormationStack:
         - "NukeAcct"
       CloudWatchLogsLogGroup:
-        - "AccountNuker-NukeAcct*"
+        - "AccountNuker-NukeAcct"
