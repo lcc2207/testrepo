@@ -1,19 +1,27 @@
 ---
 driver:
   name: ec2
+  instance_type: t2.small
+  security_group_ids: 'sg-086a550f627a4d544'
   region: 'us-east-1'
-  subnet_id: 'subnet-0ff6379b3b6daa100'
+  availability_zone: 'us-east-1b'
+  subnet_id: 'subnet-07561d975fd71a436'
+  tags:
+    Name: lcctesting
 
 provisioner:
   name: chef_zero
+  product_name: chef
+  chef_license: accept-no-persist
+  always_update_cookbooks: true
 
 verifier:
   name: inspec
 
 platforms:
-  - name: aws_linux
-    driver:
-      image_id: ami-060443742d057ebc3
+  - name: awsLinux
+    driver_config:
+      image_id: 'ami-060443742d057ebc3'
 
 suites:
   - name: default
