@@ -1,1 +1,21 @@
+---
+driver:
+  name: ec2
 
+provisioner:
+  name: chef_zero
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: aws_linux
+    driver_config:
+      image_id: ami-060443742d057ebc3
+
+suites:
+  - name: default
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
