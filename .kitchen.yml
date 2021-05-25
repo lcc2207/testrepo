@@ -4,7 +4,7 @@ driver:
   instance_type: t2.small
   security_group_ids: 'sg-086a550f627a4d544'
   region: 'us-east-1'
-  subnet_id: 'subnet-07561d975fd71a436'
+  subnet_id: 'subnet-0ff6379b3b6daa100'
   tags:
     Name: lcctesting
 
@@ -20,7 +20,7 @@ verifier:
 platforms:
   - name: awsLinux
     driver_config:
-      image_id: 'ami-060443742d057ebc3'
+      image_id: 'ami-0d5eff06f840b45e9'
 
 suites:
   - name: default
