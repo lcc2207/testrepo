@@ -4,7 +4,7 @@ driver:
   instance_type: t2.small
   security_group_ids: 'sg-086a550f627a4d544'
   region: 'us-east-1'
-  availability_zone: 'us-east-1b'
+  availability_zone: 'us-east-1a'
   subnet_id: 'subnet-07561d975fd71a436'
   tags:
     Name: lcctesting
