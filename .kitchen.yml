@@ -1,6 +1,9 @@
 ---
 driver:
   name: ec2
+  image_id: ami-060443742d057ebc3
+  region: 'us-east-1'
+  subnet_id: 'subnet-0ff6379b3b6daa100'
 
 provisioner:
   name: chef_zero
@@ -11,9 +14,6 @@ verifier:
 platforms:
   - name: aws_linux
     driver_config:
-      image_id: ami-060443742d057ebc3
-      region: 'us-east-1'
-      subnet_id: 'subnet-0ff6379b3b6daa100'
 
 suites:
   - name: default
