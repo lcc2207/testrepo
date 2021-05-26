@@ -20,7 +20,7 @@ verifier:
 platforms:
   - name: awsLinux
     driver_config:
-      image_id: 'ami-0d5eff06f840b45e9'
+      image_id: '<%= ENV['awslatest'] %>'
 
 suites:
   - name: default
