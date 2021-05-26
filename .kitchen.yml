@@ -23,6 +23,11 @@ platforms:
       image_id: '<%= ENV['awslatest'] %>'
     transport:
       username: ec2-user
+  - name: CentosLinux
+    driver_config:
+      image_id: '<%= ENV['centoslatest'] %>'
+    transport:
+      username: centos
 
 suites:
   - name: default
