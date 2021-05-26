@@ -6,7 +6,7 @@ driver:
   region: 'us-east-1'
   subnet_id: 'subnet-0ff6379b3b6daa100'
   tags:
-    Name: lcctesting
+    Name: Kitchentest
 
 provisioner:
   name: chef_zero
