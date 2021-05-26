@@ -2,7 +2,7 @@
 driver:
   name: ec2
   instance_type: t2.small
-  security_group_ids: 'sg-086a550f627a4d544'
+  security_group_ids: 'sg-093e5a2e765821d1f'
   region: 'us-east-1'
   subnet_id: 'subnet-0ff6379b3b6daa100'
   tags:
