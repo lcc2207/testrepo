@@ -21,6 +21,8 @@ platforms:
   - name: awsLinux
     driver_config:
       image_id: '<%= ENV['awslatest'] %>'
+    transport:
+      username: ec2-user
 
 suites:
   - name: default
